@@ -5,6 +5,8 @@ import {
   Roboto_700Bold,
   useFonts,
 } from "@expo-google-fonts/roboto";
+import Button from "./src/components/Button";
+import { View } from "react-native";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -16,5 +18,13 @@ export default function App() {
     return null;
   }
 
-  return <WelcomeRoutes />;
+  const log = () => {
+    console.log("Hello from orange button");
+  };
+
+  return (
+    <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <Button title="Orange button" Icon={() => <></>} onPress={log} />
+    </View>
+  );
 }
