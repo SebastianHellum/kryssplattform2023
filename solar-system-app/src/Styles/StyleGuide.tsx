@@ -1,3 +1,5 @@
+import { LinearGradient } from 'expo-linear-gradient';
+
 import React from 'react';
 import {
   StyleProp,
@@ -8,7 +10,6 @@ import {
 } from 'react-native';
 //import LinearGradient from 'react-native-linear-gradient';
 
-import { LinearGradient } from 'expo-linear-gradient';
 
 export const Colors = {
   brandBackground: '#151515',
